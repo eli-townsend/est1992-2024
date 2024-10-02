@@ -1,0 +1,178 @@
+/* Resets */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Styles */
+
+/*colors
+    #F2F4F6 / off-white
+    #1EE3CF / teal
+    #6B48FF / purple
+    #0D3F67 / dark blue
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background: #F2F4F6;
+    color: #0D3F67;
+    display: flex;
+    flex-direction: row;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	margin: 96px 96px 0 96px;
+	padding: 96px 96px 0 96px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.resume {
+	border-radius: 12px;
+	padding: 16px 32px;
+}
+
+.resume > div {
+	margin-bottom: 32px;
+}
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	flex: 1;
+}
+
+.profile > p {
+	width: 60%;
+}
+
+h1, h2, h3 {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600; 
+}
+
+h1 {
+	color: #6B48FF;
+   font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+	border-bottom: 1px solid #0D3F67;
+   font-size: 1.5em;
+   margin-bottom: 16px;
+}
+
+ul.social {
+    list-style: none;
+    margin-top: 32px;
+}
+
+ul.social > li {
+	margin: 4px 0;
+}
+
+a {
+    color: #6B48FF;
+    text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p, ul {
+	line-height: 22px;
+}
+
+.about-section > p:first-child {
+	margin-bottom: 16px;
+}
+
+ul.experience-list {
+	list-style: initial;
+}
+
+.experience-position {
+	font-weight: 600;
+}
+
+.time-span {
+	margin: 4px 0;
+}
+
+.job-tags {
+	display: flex;
+	flex-direction: row;
+	margin: 8px 0 0 0;
+}
+
+.tag {
+	background: #0D3F67;
+	border-radius: 4px;
+	color: #F2F4F6;
+	margin: 0 4px;
+	padding: 4px 8px;
+}
