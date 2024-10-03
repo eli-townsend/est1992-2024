@@ -64,6 +64,7 @@ body {
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    margin-bottom: 48px;
 }
 
 .row {
@@ -147,10 +148,6 @@ p, ul {
 	line-height: 22px;
 }
 
-.about-section > p:first-child {
-	margin-bottom: 16px;
-}
-
 ul.experience-list {
 	list-style: initial;
 }
@@ -175,4 +172,70 @@ ul.experience-list {
 	color: #F2F4F6;
 	margin: 0 4px;
 	padding: 4px 8px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.row {
+		display: flex;
+		justify-content: space-between;
+		margin: 48px 48px 0 48px;
+		padding: 48px 48px 0 48px;
+	}
+}
+
+@media only screen and (max-width: 1034px) {
+	.row {
+		display: flex;
+		justify-content: space-between;
+		margin: 36px 36px 0 36px;
+		padding: 36px 36px 0 36px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.row {
+		display: flex;
+		justify-content: space-between;
+		margin: 16px 16px 0 16px;
+		padding: 16px 16px 0 16px;
+	}
+}
+
+@media only screen and (max-width: 866px) {
+	body {
+		margin-top: 48px;
+	}
+
+	.row {
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+	}
+
+	.fixed {
+		position: static;
+	}
+
+	.profile {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		flex: 1;
+		align-items: center;
+	}
+
+	.profile > p {
+		width: auto;
+	}
+
+	ul.social {
+    list-style: none;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+	}
+
+	ul.social > li {
+		margin-right: 8px;
+	}
 }
